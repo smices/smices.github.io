@@ -24,3 +24,17 @@ test("site supports light and dark color themes", async () => {
   assert.match(css, /color-scheme:\s*dark/);
   assert.match(css, /\[data-theme="light"\]/);
 });
+
+test("project section uses compact vertical rhythm", async () => {
+  const css = await readFile(new URL("stylesheets/stylesheet.css", root), "utf8");
+
+  assert.match(css, /\.hero\s*\{[^}]*min-height:\s*620px;[^}]*padding:\s*72px 0 72px;/s);
+  assert.match(css, /\.project-section\s*\{[^}]*padding:\s*64px 0 88px;/s);
+  assert.match(css, /\.project-card\s*\{[^}]*min-height:\s*240px;/s);
+});
+
+test("site declares a favicon", async () => {
+  const html = await readFile(new URL("index.html", root), "utf8");
+
+  assert.match(html, /<link rel="icon"[^>]+>/);
+});

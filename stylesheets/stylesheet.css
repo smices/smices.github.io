@@ -218,8 +218,8 @@ main {
   grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
   gap: 80px;
   align-items: center;
-  min-height: 680px;
-  padding: 92px 0 130px;
+  min-height: 620px;
+  padding: 72px 0 72px;
 }
 
 .eyebrow,
@@ -384,7 +384,7 @@ main {
 }
 
 .project-section {
-  padding: 120px 0;
+  padding: 64px 0 88px;
   border-top: 1px solid var(--line);
 }
 
@@ -392,7 +392,7 @@ main {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 
 .section-heading h2 {
@@ -474,8 +474,8 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
-  padding: 26px;
+  min-height: 240px;
+  padding: 22px;
   overflow: hidden;
   background: var(--bg-elevated);
   border: 1px solid var(--line);
@@ -509,7 +509,7 @@ main {
   align-items: center;
   justify-content: space-between;
   min-height: 22px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   color: var(--text-faint);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.66rem;
@@ -587,7 +587,7 @@ main {
 }
 
 .skeleton {
-  min-height: 300px;
+  min-height: 240px;
   background: linear-gradient(100deg, var(--surface) 20%, var(--surface-hover) 42%, var(--surface) 64%);
   background-size: 200% 100%;
   animation: shimmer 1.35s infinite linear;
@@ -677,7 +677,7 @@ main {
 
   .hero {
     min-height: auto;
-    padding: 74px 0 96px;
+    padding: 56px 0 60px;
   }
 
   .hero h1 {
@@ -701,7 +701,7 @@ main {
   }
 
   .project-section {
-    padding: 90px 0;
+    padding: 56px 0 72px;
   }
 
   .filter-field {
@@ -713,7 +713,7 @@ main {
   }
 
   .project-card {
-    min-height: 280px;
+    min-height: 240px;
   }
 
   .site-footer {
